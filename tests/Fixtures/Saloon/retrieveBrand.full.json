@@ -1,0 +1,29 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "2717",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 16:52:49 GMT",
+        "x-amzn-RequestId": "7336f013-cec2-429f-af5c-3d8581e787b8",
+        "x-api-key-quota": "250",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKU7ME3ioAMEsDw=",
+        "x-api-key-approximate-usage": "2",
+        "X-Amzn-Trace-Id": "Root=1-653401e0-4a95785d18e1ecb94513ede2;Sampled=0;lineage=837cb9e4:0|983852bb:0",
+        "Access-Control-Allow-Credentials": "true",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 f66e3db0f0449307dba3fbf72bbf3bac.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "r1MXVWTVy_9E_mbFCfQJmmS6E-nqsLNup7iLxiRPKtDnD8cMyfHspg==",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "{\"name\":\"Brandfetch\",\"domain\":\"brandfetch.com\",\"claimed\":true,\"description\":\"Brandfetch is the home for the world's brands. Discover the latest logos, colors, fonts and more.\",\"longDescription\":\"Brandfetch is a tool that allows users to easily fetch logo images, color codes, and other brand assets for various companies. By inputting a domain name, Brandfetch returns the company's logo, primary colors, and sometimes additional branding information. This streamlined process aids marketers, designers, developers, and other professionals in quickly acquiring branding assets without the need to manually sift through a company's website or branding guidelines. The platform is especially beneficial for those crafting presentations, websites, apps, or any other visual content where brand consistency and accuracy are of utmost importance.\",\"links\":[{\"name\":\"twitter\",\"url\":\"https:\/\/twitter.com\/brandfetch\"},{\"name\":\"linkedin\",\"url\":\"https:\/\/linkedin.com\/company\/brandfetch\"}],\"logos\":[{\"theme\":\"light\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/id9WE9j86h.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"size\":15555}],\"tags\":[],\"type\":\"logo\"},{\"theme\":\"dark\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/idWbsK1VCy.png\",\"background\":\"transparent\",\"format\":\"png\",\"height\":215,\"width\":800,\"size\":33937},{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/idtCMfbWO0.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"height\":null,\"width\":null,\"size\":15567}],\"tags\":[],\"type\":\"logo\"},{\"theme\":\"dark\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/idls3LaPPQ.png\",\"background\":null,\"format\":\"png\",\"height\":400,\"width\":400,\"size\":2565}],\"tags\":[],\"type\":\"icon\"},{\"theme\":\"light\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/idXGq6SIu2.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"size\":2215}],\"tags\":[],\"type\":\"symbol\"},{\"theme\":null,\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/iddCQ52AR5.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"size\":2215}],\"tags\":[],\"type\":\"other\"}],\"colors\":[{\"hex\":\"#0084ff\",\"type\":\"accent\",\"brightness\":113},{\"hex\":\"#00193E\",\"type\":\"brand\",\"brightness\":22},{\"hex\":\"#F03063\",\"type\":\"brand\",\"brightness\":93},{\"hex\":\"#7B0095\",\"type\":\"brand\",\"brightness\":37},{\"hex\":\"#76CC4B\",\"type\":\"brand\",\"brightness\":176},{\"hex\":\"#FFDA00\",\"type\":\"brand\",\"brightness\":210}],\"fonts\":[{\"name\":\"Poppins\",\"type\":\"title\",\"origin\":\"google\",\"originId\":\"Poppins\",\"weights\":[]},{\"name\":\"Inter\",\"type\":\"body\",\"origin\":\"google\",\"originId\":\"Inter\",\"weights\":[]}],\"images\":[{\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idL0iThUh6\/idUuia5imo.png\",\"background\":\"transparent\",\"format\":\"png\",\"height\":500,\"width\":1500,\"size\":5539}],\"tags\":[],\"type\":\"banner\"}]}"
+}

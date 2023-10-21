@@ -1,0 +1,29 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "2074",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 16:52:59 GMT",
+        "x-amzn-RequestId": "5ede75f3-9255-4e5a-85b1-fa4adee9ae03",
+        "x-api-key-quota": "250",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKU8wGMPoAMENbQ=",
+        "x-api-key-approximate-usage": "3",
+        "X-Amzn-Trace-Id": "Root=1-653401ea-14df876d3fe3314230235c94;Sampled=0;lineage=983852bb:0",
+        "Access-Control-Allow-Credentials": "true",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 41dc61beb3fe8e8c2c299a2522d8330c.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "PRGpiMCwfTWDmTVrLvf615hFbJKK1taRfZXIGkF1W3Z8MVvIzwx66g==",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "{\"name\":\"Autostrada\",\"domain\":\"autostrada.no\",\"claimed\":false,\"description\":\"Trenger du service? Uansett om du bor i Skien, Porsgrunn, Notodden, Seljord eller Arendal har vi det som er noen av Norges beste bilverksteder. V\u00e5re\",\"longDescription\":\"Autostrada is a renowned brand that offers a wide range of automotive products and services. Whether you reside in Skien, Porsgrunn, Notodden, Seljord, or Arendal, we have some of Norway's best car workshops to cater to your needs. Our expertly trained technicians carry out all types of repairs, EU inspections, and services at our state-of-the-art facilities. Additionally, we provide a comprehensive selection of top-class vehicles from esteemed brands like Volvo, Porsche, Jaguar, Land Rover, Alfa Romeo, Mercedes-Benz, Jeep, Peugeot, Fiat, Subaru, Xpeng, and Lotus. If you're in the market for a used car, Autostrada always offers a diverse and impressive range of pre-owned vehicles. And if your car requires maintenance or repairs, our skilled team is ready to assist you. Furthermore, we organize exciting events like Winter Experience, Track Experience, OffRoad Experience, and Travel Experience to create memorable moments for our customers. Stay updated on our events and special offers by subscribing to our newsletter. Discover the world of Autostrada and let us take you further, no matter how far you've already come.\",\"links\":[],\"logos\":[{\"theme\":\"light\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idw11na_VM\/idgLZgos1u.png\",\"background\":\"transparent\",\"format\":\"png\",\"height\":503,\"width\":820,\"size\":25803},{\"src\":\"https:\/\/asset.brandfetch.io\/idw11na_VM\/idA_Iz8r0T.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"size\":6306}],\"tags\":[],\"type\":\"logo\"}],\"colors\":[{\"hex\":\"#cb0d29\",\"type\":\"accent\",\"brightness\":55},{\"hex\":\"#3c040d\",\"type\":\"dark\",\"brightness\":17},{\"hex\":\"#f6f6f6\",\"type\":\"light\",\"brightness\":246}],\"fonts\":[{\"name\":\"Enzo Pro Med\",\"type\":\"title\",\"origin\":\"custom\",\"originId\":null,\"weights\":[]},{\"name\":\"Open Sans\",\"type\":\"body\",\"origin\":\"google\",\"originId\":\"Open+Sans\",\"weights\":[]}],\"images\":[]}"
+}

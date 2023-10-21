@@ -1,0 +1,27 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "2",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 16:36:50 GMT",
+        "x-amzn-RequestId": "d9cfb965-8a5e-4611-acdb-f5658555d09f",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKSlWH5SoAMEDNA=",
+        "X-Amzn-Trace-Id": "Root=1-6533fe21-413e072c0d7114b44c685136;Sampled=0;lineage=0cb6f994:0",
+        "Access-Control-Allow-Credentials": "true",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 4f01f770085624552bc30a98954f963a.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "0VMQz6W_7QsLP9VynnUOlzcDv-IDLa4ME8BxznNjQQdnidYpCgzoOg==",
+        "Age": "884",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "[]"
+}

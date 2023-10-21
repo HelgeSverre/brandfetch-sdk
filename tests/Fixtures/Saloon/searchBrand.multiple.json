@@ -1,0 +1,27 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "608",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 16:36:50 GMT",
+        "x-amzn-RequestId": "2a156cf3-1127-4003-a486-6975ad45058b",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKSlfEsioAMEvyw=",
+        "X-Amzn-Trace-Id": "Root=1-6533fe22-1f31305b595e53e43bdfe15b;Sampled=0;lineage=0cb6f994:0",
+        "Access-Control-Allow-Credentials": "true",
+        "X-Cache": "Hit from cloudfront",
+        "Via": "1.1 410f51195842d9b592b15d6588c36654.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "J2-DlKYRJbcydyZJK40kksFsG6hJDrxaMFoA7yqJA-bU52XkMMsnnQ==",
+        "Age": "884",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "[{\"claimed\":false,\"name\":\"Google\",\"domain\":\"google.com\",\"icon\":\"https:\/\/asset.brandfetch.io\/search\/icon\/id6O2oGzv-\/idNEgS9h8q\/1692272065756\",\"brandId\":\"id6O2oGzv-\"},{\"claimed\":false,\"name\":\"Google\",\"domain\":\"google.co.in\",\"icon\":null,\"brandId\":\"ide1LOmubR\"},{\"claimed\":false,\"name\":\"Google\",\"domain\":\"google.com.br\",\"icon\":null,\"brandId\":\"id5mnb40hS\"},{\"claimed\":false,\"name\":\"Google\",\"domain\":\"google.co.jp\",\"icon\":null,\"brandId\":\"idpTHPiSzL\"},{\"claimed\":false,\"name\":\"Google\",\"domain\":\"google.de\",\"icon\":\"https:\/\/asset.brandfetch.io\/search\/icon\/idc-4kdtk4\/idDYFvjeFV\/1686426772519\",\"brandId\":\"idc-4kdtk4\"}]"
+}

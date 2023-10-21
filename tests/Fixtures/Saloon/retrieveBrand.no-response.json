@@ -1,0 +1,28 @@
+{
+    "statusCode": 404,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "33",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 16:54:07 GMT",
+        "x-amzn-RequestId": "44eaf56c-9fa4-4d71-9b53-e58607b9dd59",
+        "x-api-key-quota": "250",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKVHYF7moAMEiZQ=",
+        "x-api-key-approximate-usage": "7",
+        "X-Amzn-Trace-Id": "Root=1-6534022e-0250024f77db03b758767958;Sampled=0;lineage=983852bb:0",
+        "Access-Control-Allow-Credentials": "true",
+        "X-Cache": "Error from cloudfront",
+        "Via": "1.1 a2b4f68a89fc87406bff22c95fc07fba.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "dsCt7kxZcOdFKruzHznb4KYm3UE5cGBaHhR5sB8xMdKkJC6blFdpbg==",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "{\"message\":\"Invalid Domain Name\"}"
+}

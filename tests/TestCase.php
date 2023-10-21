@@ -1,36 +1,35 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace HelgeSverre\Brandfetch\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Dotenv\Dotenv;
+use Illuminate\Foundation\Bootstrap\LoadEnvironmentVariables;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\SkeletonServiceProvider;
+use Saloon\Laravel\SaloonServiceProvider;
+use Spatie\LaravelData\LaravelDataServiceProvider;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
-
-    protected function getPackageProviders($app)
+    protected function getPackageProviders($app): array
     {
         return [
-            SkeletonServiceProvider::class,
+            SaloonServiceProvider::class,
+            LaravelDataServiceProvider::class,
         ];
     }
 
+    /** @noinspection LaravelFunctionsInspection */
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
+        // Load .env.test into the environment.
+        if (file_exists(dirname(__DIR__).'/.env')) {
+            (Dotenv::createImmutable(dirname(__DIR__), '.env'))->load();
+        }
 
-        /*
-        $migration = include __DIR__.'/../database/migrations/create_skeleton_table.php.stub';
-        $migration->up();
-        */
+        config()->set('brandfetch-sdk.api_key', env('BRANDFETCH_API_KEY'));
+
+        $app->useEnvironmentPath(__DIR__.'/..');
+        $app->bootstrapWith([LoadEnvironmentVariables::class]);
+
     }
 }
