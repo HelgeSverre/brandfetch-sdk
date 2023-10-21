@@ -6,6 +6,7 @@ use GuzzleHttp\Psr7\Uri;
 use HelgeSverre\Brandfetch\Requests\RetrieveBrand;
 use HelgeSverre\Brandfetch\Requests\SearchBrand;
 use Saloon\Http\Connector;
+use Saloon\Http\Response;
 use SensitiveParameter;
 
 class Brandfetch extends Connector
@@ -19,7 +20,7 @@ class Brandfetch extends Connector
 
     public function resolveBaseUrl(): string
     {
-        return 'https://api.brandfetch.io/v2';
+        return 'https://api.brandfetch.io';
     }
 
     protected function defaultHeaders(): array
@@ -30,12 +31,12 @@ class Brandfetch extends Connector
         ];
     }
 
-    public function retrieveBrand(string|Uri $domainName)
+    public function retrieveBrand(string|Uri $domainName): Response
     {
         return $this->send(new RetrieveBrand($domainName));
     }
 
-    public function searchBrand(string $brandName, string $referer)
+    public function searchBrand(string $brandName, string $referer = 'https://github.com/HelgeSverre/brandfetch-sdk'): Response
     {
         return $this->send(new SearchBrand($brandName, $referer));
     }

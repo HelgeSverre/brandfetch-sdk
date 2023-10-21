@@ -14,14 +14,16 @@ class SearchBrand extends Request
 {
     protected Method $method = Method::GET;
 
-    public function __construct(protected string $brandName, protected string $referer)
-    {
+    public function __construct(
+        protected string $brandName,
+        protected string $referer
+    ) {
 
     }
 
     public function resolveEndpoint(): string
     {
-        return "search/{$this->brandName}";
+        return "/v2/search/{$this->brandName}";
     }
 
     protected function defaultHeaders(): array

@@ -19,7 +19,7 @@ class RetrieveBrand extends Request
 
     public function resolveEndpoint(): string
     {
-        return "brands/{$this->domainName}";
+        return "/v2/brands/{$this->domainName}";
     }
 
     public function __construct(string|Uri $domainName)
