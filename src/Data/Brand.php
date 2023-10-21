@@ -17,7 +17,7 @@ class Brand extends Data
      * @param  array|Image[]  $images
      */
     public function __construct(
-        public string $name,
+        public ?string $name,
         public string $domain,
         public bool $claimed,
         public ?string $description,
