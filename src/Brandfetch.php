@@ -40,4 +40,10 @@ class Brandfetch extends Connector
     {
         return $this->send(new SearchBrand($brandName, $referer));
     }
+
+    // Shortcut for convenience
+    public function logo($domainName): ?string
+    {
+        return rescue(fn () => $this->retrieveBrand($domainName)->json('logos.0.formats.0.src'), report: false);
+    }
 }

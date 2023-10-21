@@ -2,6 +2,7 @@
 
 namespace HelgeSverre\Brandfetch\Requests;
 
+use HelgeSverre\Brandfetch\Data\Brand;
 use HelgeSverre\Brandfetch\Data\SearchResult;
 use Saloon\Enums\Method;
 use Saloon\Http\Request;

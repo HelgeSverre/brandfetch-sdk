@@ -1,0 +1,29 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json",
+        "Content-Length": "1701",
+        "Connection": "keep-alive",
+        "Date": "Sat, 21 Oct 2023 17:54:39 GMT",
+        "x-amzn-RequestId": "491f9caf-57ac-434a-bcec-807f2ae1dbf1",
+        "x-api-key-quota": "250",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "*",
+        "x-amz-apigw-id": "NKd--E6_oAMEiIA=",
+        "x-api-key-approximate-usage": "15",
+        "X-Amzn-Trace-Id": "Root=1-6534105f-0c3d90ce745ff06314dd3771;Sampled=0;lineage=983852bb:0",
+        "Access-Control-Allow-Credentials": "true",
+        "Vary": "Accept-Encoding",
+        "X-Cache": "Miss from cloudfront",
+        "Via": "1.1 475d4ecb64796af058573c6f1048e898.cloudfront.net (CloudFront)",
+        "X-Amz-Cf-Pop": "OSL50-C1",
+        "Alt-Svc": "h3=\":443\"; ma=86400",
+        "X-Amz-Cf-Id": "w48uM7UF0swwY6R5XkZdWC132_91irt5GAchr0Vna4GMgzOiw2eukg==",
+        "X-XSS-Protection": "1; mode=block",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains"
+    },
+    "data": "{\"name\":\"Power\",\"domain\":\"power.no\",\"claimed\":false,\"description\":\"Alltid massevis av sterke tilbud p\u00e5 hvitevarer, elektronikk, TV, lyd og datamaskiner! Alltid oppdaterte nettpriser i butikk!\",\"longDescription\":\"Power is a leading brand renowned as the Nordics' largest retailer of electronic goods. With its wide range of products and exceptional services, Power has established itself as the go-to destination for all your electronic needs. Whether you're looking for the latest smartphones, cutting-edge laptops, high-performance gaming consoles or top-of-the-line home appliances, Power has got you covered. Their impressive inventory includes an extensive selection of renowned brands, ensuring that customers can find the perfect device to suit their requirements. In addition to their vast product range, Power also offers exceptional customer service, expert advice, and competitive prices. With a commitment to quality and satisfaction, Power remains at the forefront of the industry, providing customers with an unparalleled shopping experience. Discover the power of innovation and technology at Power.no.\",\"links\":[],\"logos\":[{\"theme\":\"dark\",\"formats\":[{\"src\":\"https:\/\/asset.brandfetch.io\/idNTxrFioD\/idwaNnx4aT.png\",\"background\":null,\"format\":\"png\",\"height\":96,\"width\":96,\"size\":1558}],\"tags\":[],\"type\":\"logo\"}],\"colors\":[{\"hex\":\"#1e2225\",\"type\":\"dark\",\"brightness\":33},{\"hex\":\"#ffffff\",\"type\":\"light\",\"brightness\":255},{\"hex\":\"#ec6608\",\"type\":\"accent\",\"brightness\":124}],\"fonts\":[{\"name\":\"Gotham Narrow SSm A\",\"type\":\"title\",\"origin\":\"custom\",\"originId\":null,\"weights\":[]},{\"name\":\"Source Code Pro\",\"type\":\"body\",\"origin\":\"google\",\"originId\":\"Source+Code+Pro\",\"weights\":[]}],\"images\":[]}"
+}

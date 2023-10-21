@@ -7,6 +7,9 @@ use Spatie\LaravelData\Data;
 
 class Logo extends Data
 {
+    /**
+     * @param  array|Format[]  $formats
+     */
     public function __construct(
         public ?string $theme,
         #[DataCollectionOf(Format::class)]
