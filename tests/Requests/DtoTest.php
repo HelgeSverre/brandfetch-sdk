@@ -4,6 +4,11 @@
 
 use HelgeSverre\Brandfetch\Brandfetch;
 use HelgeSverre\Brandfetch\Data\Brand;
+use HelgeSverre\Brandfetch\Data\Color;
+use HelgeSverre\Brandfetch\Data\Font;
+use HelgeSverre\Brandfetch\Data\Image;
+use HelgeSverre\Brandfetch\Data\Link;
+use HelgeSverre\Brandfetch\Data\Logo;
 use HelgeSverre\Brandfetch\Requests\RetrieveBrand;
 use HelgeSverre\Brandfetch\Requests\SearchBrand;
 use Saloon\Http\Faking\MockResponse;
@@ -66,11 +71,16 @@ it('RetrieveBrand returns complete response', closure: function () {
     expect($dto)->toBeInstanceOf(Brand::class)
         ->and($dto->domain)->toBe('brandfetch.com')
         ->and($dto->name)->toBe('Brandfetch')
-        ->and($dto->links)->toBeArray()
-        ->and($dto->logos)->toBeArray()
-        ->and($dto->colors)->toBeArray()
-        ->and($dto->fonts)->toBeArray()
-        ->and($dto->images)->toBeArray();
+        ->and($dto->links)->toBeInstanceOf(DataCollection::class)
+        ->and($dto->links[0])->toBeInstanceOf(Link::class)
+        ->and($dto->logos)->toBeInstanceOf(DataCollection::class)
+        ->and($dto->logos[0])->toBeInstanceOf(Logo::class)
+        ->and($dto->colors)->toBeInstanceOf(DataCollection::class)
+        ->and($dto->colors[0])->toBeInstanceOf(Color::class)
+        ->and($dto->fonts)->toBeInstanceOf(DataCollection::class)
+        ->and($dto->fonts[0])->toBeInstanceOf(Font::class)
+        ->and($dto->images)->toBeInstanceOf(DataCollection::class)
+        ->and($dto->images[0])->toBeInstanceOf(Image::class);
 
     Saloon::assertSent('/v2/brands/brandfetch.com');
     Saloon::assertSent(RetrieveBrand::class);

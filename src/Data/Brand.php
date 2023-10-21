@@ -5,6 +5,7 @@ namespace HelgeSverre\Brandfetch\Data;
 use Saloon\Http\Response;
 use Spatie\LaravelData\Attributes\DataCollectionOf;
 use Spatie\LaravelData\Data;
+use Spatie\LaravelData\DataCollection;
 
 class Brand extends Data
 {
@@ -22,15 +23,15 @@ class Brand extends Data
         public ?string $description,
         public ?string $longDescription,
         #[DataCollectionOf(Link::class)]
-        public ?array $links = null,
+        public ?DataCollection $links = null,
         #[DataCollectionOf(Logo::class)]
-        public ?array $logos = null,
+        public ?DataCollection $logos = null,
         #[DataCollectionOf(Color::class)]
-        public ?array $colors = null,
+        public ?DataCollection $colors = null,
         #[DataCollectionOf(Font::class)]
-        public ?array $fonts = null,
+        public ?DataCollection $fonts = null,
         #[DataCollectionOf(Image::class)]
-        public ?array $images = null
+        public ?DataCollection $images = null
     ) {
     }
 
