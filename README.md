@@ -72,27 +72,50 @@ $brand = Brandfetch::searchBrand("brandfetch.com")->dto()
 
 ### RetrieveBrand Request DTO
 
-The `RetrieveBrand` request returns a `Brand` DTO which includes the following properties:
+The `RetrieveBrand` request returns a `Brand` DTO with nested structures. The DTO includes the following properties:
 
 - `name`: ?string - The name of the brand.
 - `domain`: string - The domain associated with the brand.
 - `claimed`: bool - Whether the brand has been claimed.
 - `description`: ?string - A short description of the brand.
 - `longDescription`: ?string - A longer description of the brand.
-- `links`: ?DataCollection of `Link` - A collection of links related to the brand.
-- `logos`: ?DataCollection of `Logo` - A collection of logos associated with the brand.
-- `colors`: ?DataCollection of `Color` - A collection of colors used by the brand.
-- `fonts`: ?DataCollection of `Font` - A collection of fonts used by the brand.
-- `images`: ?DataCollection of `Image` - A collection of images associated with the brand.
+- `links`: ?DataCollection of `Link` - A collection of links related to the brand, each containing:
+   - `name`: string - The name of the link.
+   - `url`: string - The URL of the link.
+- `logos`: ?DataCollection of `Logo` - A collection of logos associated with the brand, each containing:
+   - `theme`: ?string - The theme of the logo.
+   - `formats`: DataCollection of `Format` - The available formats of the logo, each containing:
+       - `src`: string - The source URL of the format.
+       - `background`: ?string - The background color of the format.
+       - `format`: string - The format type (e.g., 'png', 'svg').
+       - `size`: ?int - The size of the format.
+       - `height`: ?int - The height of the format.
+       - `width`: ?int - The width of the format.
+   - `tags`: array - Tags associated with the logo.
+   - `type`: string - The type of the logo.
+- `colors`: ?DataCollection of `Color` - A collection of colors used by the brand, each containing:
+   - `hex`: string - The HEX code of the color.
+   - `type`: string - The type of the color (e.g., 'primary', 'secondary').
+   - `brightness`: int - The brightness of the color.
+- `fonts`: ?DataCollection of `Font` - A collection of fonts used by the brand, each containing:
+   - `name`: ?string - The name of the font.
+   - `type`: ?string - The type of the font.
+   - `origin`: ?string - The origin of the font.
+   - `originId`: ?string - The origin ID of the font.
+- `images`: ?DataCollection of `Image` - A collection of images associated with the brand, each containing:
+   - `formats`: DataCollection of `Format` - The available formats of the image, similar to logo formats.
+   - `tags`: array - Tags associated with the image.
+   - `type`: string - The type of the image.
 
 ### SearchBrand Request DTO
 
-The `SearchBrand` request returns a `SearchResult` DTO which includes the following properties:
+The `SearchBrand` request returns a `SearchResult` DTO with nested structures. The DTO includes the following properties:
 
 - `name`: ?string - The name of the brand.
 - `domain`: string - The domain associated with the brand.
 - `claimed`: bool - Whether the brand has been claimed.
 - `icon`: ?string - The icon of the brand.
+- Each `SearchResult` DTO is part of a `DataCollection` representing the search results.
 
 Each `SearchResult` DTO is part of a `DataCollection` representing the search results.
 
