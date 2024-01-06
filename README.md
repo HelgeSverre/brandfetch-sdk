@@ -93,7 +93,13 @@ The `retrieveBrand()->dto()` method returns a `Brand` DTO with the following pro
     - `origin`: ?string - The origin of the font.
     - `originId`: ?string - The origin ID of the font.
 - `images`: ?DataCollection of `Image` - A collection of images associated with the brand, each containing:
-    - `formats`: DataCollection of `Format` - The available formats of the image, similar to logo formats.
+    - `formats`: DataCollection of `Format` - The available formats of the image, each containing:
+        - `src`: string - The source URL of the format.
+        - `background`: ?string - The background color of the format.
+        - `format`: string - The format type (e.g., 'png', 'svg').
+        - `size`: ?int - The size of the format.
+        - `height`: ?int - The height of the format.
+        - `width`: ?int - The width of the format.
     - `tags`: array - Tags associated with the image.
     - `type`: string - The type of the image.
 
