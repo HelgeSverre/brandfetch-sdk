@@ -68,6 +68,34 @@ $brand = Brandfetch::searchBrand("brandfetch.com")->dto()
 
 ## Testing
 
+## DTO Responses
+
+### RetrieveBrand Request DTO
+
+The `RetrieveBrand` request returns a `Brand` DTO which includes the following properties:
+
+- `name`: ?string - The name of the brand.
+- `domain`: string - The domain associated with the brand.
+- `claimed`: bool - Whether the brand has been claimed.
+- `description`: ?string - A short description of the brand.
+- `longDescription`: ?string - A longer description of the brand.
+- `links`: ?DataCollection of `Link` - A collection of links related to the brand.
+- `logos`: ?DataCollection of `Logo` - A collection of logos associated with the brand.
+- `colors`: ?DataCollection of `Color` - A collection of colors used by the brand.
+- `fonts`: ?DataCollection of `Font` - A collection of fonts used by the brand.
+- `images`: ?DataCollection of `Image` - A collection of images associated with the brand.
+
+### SearchBrand Request DTO
+
+The `SearchBrand` request returns a `SearchResult` DTO which includes the following properties:
+
+- `name`: ?string - The name of the brand.
+- `domain`: string - The domain associated with the brand.
+- `claimed`: bool - Whether the brand has been claimed.
+- `icon`: ?string - The icon of the brand.
+
+Each `SearchResult` DTO is part of a `DataCollection` representing the search results.
+
 ```bash
 composer test
 ```
