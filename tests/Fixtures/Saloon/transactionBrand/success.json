@@ -1,0 +1,7 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application/json"
+    },
+    "data": "{\"name\":\"Starbucks\",\"domain\":\"starbucks.com\",\"claimed\":true,\"description\":\"Starbucks Corporation is an American multinational chain of coffeehouses and roastery reserves.\",\"longDescription\":null,\"links\":[],\"logos\":[{\"theme\":\"light\",\"formats\":[{\"src\":\"https://asset.brandfetch.io/starbucks.com/logo.svg\",\"background\":\"transparent\",\"format\":\"svg\",\"size\":1234}],\"tags\":[],\"type\":\"logo\"}],\"colors\":[{\"hex\":\"#00704A\",\"type\":\"brand\",\"brightness\":50}],\"fonts\":[],\"images\":[]}"
+}

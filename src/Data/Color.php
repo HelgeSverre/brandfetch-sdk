@@ -10,6 +10,5 @@ class Color extends Data
         public string $hex,
         public string $type,
         public int $brightness
-    ) {
-    }
+    ) {}
 }

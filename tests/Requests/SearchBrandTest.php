@@ -11,10 +11,10 @@ beforeEach(function () {
     $this->brandfetch = new Brandfetch(apiKey: env('BRANDFETCH_API_KEY', 'fake-api-key'));
 });
 
-it('SearchBrand returns a single result', closure: function () {
+it('SearchBrand returns a single result', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.single'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/single'),
     ]);
 
     $response = $this->brandfetch->searchBrand('brandfetch', 'helgesver.re');
@@ -27,10 +27,10 @@ it('SearchBrand returns a single result', closure: function () {
     Saloon::assertSent(SearchBrand::class);
 });
 
-it('SearchBrand returns a multiple results', closure: function () {
+it('SearchBrand returns a multiple results', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.multiple'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/multiple'),
     ]);
 
     $response = $this->brandfetch->searchBrand('google', 'helgesver.re');
@@ -43,10 +43,10 @@ it('SearchBrand returns a multiple results', closure: function () {
     Saloon::assertSent(SearchBrand::class);
 });
 
-it('SearchBrand returns no results', closure: function () {
+it('SearchBrand returns no results', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.empty'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/empty'),
     ]);
     $response = $this->brandfetch->searchBrand('invalid-domain-should-fail-horribly', 'helgesver.re');
 

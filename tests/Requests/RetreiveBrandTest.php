@@ -11,10 +11,10 @@ beforeEach(function () {
     $this->brandfetch = new Brandfetch(apiKey: env('BRANDFETCH_API_KEY', 'fake-api-key'));
 });
 
-it('RetrieveBrand returns complete response', closure: function () {
+it('RetrieveBrand returns complete response', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.full'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/full'),
     ]);
 
     $response = $this->brandfetch->retrieveBrand('brandfetch.com');
@@ -27,10 +27,10 @@ it('RetrieveBrand returns complete response', closure: function () {
     Saloon::assertSent(RetrieveBrand::class);
 });
 
-it('RetrieveBrand returns response for autostrada.no', closure: function () {
+it('RetrieveBrand returns response for autostrada.no', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.brand-autostrada'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/brand-autostrada'),
     ]);
     $response = $this->brandfetch->retrieveBrand('autostrada.no');
 
@@ -42,10 +42,10 @@ it('RetrieveBrand returns response for autostrada.no', closure: function () {
     Saloon::assertSent(RetrieveBrand::class);
 });
 
-it('RetrieveBrand returns response for helgesver.re', closure: function () {
+it('RetrieveBrand returns response for helgesver.re', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.brand-helgesverre'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/brand-helgesverre'),
     ]);
     $response = $this->brandfetch->retrieveBrand('helgesver.re');
 
@@ -57,10 +57,10 @@ it('RetrieveBrand returns response for helgesver.re', closure: function () {
     Saloon::assertSent(RetrieveBrand::class);
 });
 
-it('RetrieveBrand returns response for google.com', closure: function () {
+it('RetrieveBrand returns response for google.com', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.brand-google'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/brand-google'),
     ]);
     $response = $this->brandfetch->retrieveBrand('google.com');
 
@@ -72,10 +72,10 @@ it('RetrieveBrand returns response for google.com', closure: function () {
     Saloon::assertSent(RetrieveBrand::class);
 });
 
-it('RetrieveBrand returns no response', closure: function () {
+it('RetrieveBrand returns no response', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.no-response'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/no-response'),
     ]);
     $response = $this->brandfetch->retrieveBrand('invalid-domain-should-fail-horribly.com');
 

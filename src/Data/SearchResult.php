@@ -2,9 +2,9 @@
 
 namespace HelgeSverre\Brandfetch\Data;
 
+use Illuminate\Support\Collection;
 use Saloon\Http\Response;
 use Spatie\LaravelData\Data;
-use Spatie\LaravelData\DataCollection;
 
 class SearchResult extends Data
 {
@@ -13,12 +13,14 @@ class SearchResult extends Data
         public string $domain,
         public bool $claimed,
         // The documentation is wrong, this is always a string
-        public ?string $icon
-    ) {
-    }
+        public ?string $icon,
+    ) {}
 
-    public static function fromResponse(Response $response): DataCollection
+    /**
+     * @return Collection<int, SearchResult>
+     */
+    public static function fromResponse(Response $response): Collection
     {
-        return self::collection($response->json());
+        return self::collect($response->json(), Collection::class);
     }
 }

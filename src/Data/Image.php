@@ -13,6 +13,5 @@ class Image extends Data
         public DataCollection $formats,
         public array $tags,
         public string $type
-    ) {
-    }
+    ) {}
 }

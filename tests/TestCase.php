@@ -19,7 +19,7 @@ class TestCase extends Orchestra
     }
 
     /** @noinspection LaravelFunctionsInspection */
-    public function getEnvironmentSetUp($app)
+    public function getEnvironmentSetUp($app): void
     {
         // Load .env.test into the environment.
         if (file_exists(dirname(__DIR__).'/.env')) {

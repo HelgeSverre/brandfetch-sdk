@@ -22,6 +22,11 @@ class Brand extends Data
         public bool $claimed,
         public ?string $description,
         public ?string $longDescription,
+        public ?float $qualityScore,
+        public ?bool $isNsfw,
+        public ?string $stockTicker,
+        public ?string $isin,
+        public ?Company $company,
         #[DataCollectionOf(Link::class)]
         public ?DataCollection $links = null,
         #[DataCollectionOf(Logo::class)]
@@ -32,8 +37,7 @@ class Brand extends Data
         public ?DataCollection $fonts = null,
         #[DataCollectionOf(Image::class)]
         public ?DataCollection $images = null
-    ) {
-    }
+    ) {}
 
     public static function fromResponse(Response $response): self
     {

@@ -13,6 +13,5 @@ class Format extends Data
         public ?int $size,
         public ?int $height,
         public ?int $width
-    ) {
-    }
+    ) {}
 }

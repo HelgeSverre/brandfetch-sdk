@@ -11,6 +11,7 @@ use HelgeSverre\Brandfetch\Data\Link;
 use HelgeSverre\Brandfetch\Data\Logo;
 use HelgeSverre\Brandfetch\Requests\RetrieveBrand;
 use HelgeSverre\Brandfetch\Requests\SearchBrand;
+use Illuminate\Support\Collection;
 use Saloon\Http\Faking\MockResponse;
 use Saloon\Laravel\Facades\Saloon;
 use Spatie\LaravelData\DataCollection;
@@ -19,50 +20,50 @@ beforeEach(function () {
     $this->brandfetch = new Brandfetch(apiKey: env('BRANDFETCH_API_KEY', 'fake-api-key'));
 });
 
-it('SearchBrand returns a single result', closure: function () {
+it('SearchBrand returns a single result', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.single'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/single'),
     ]);
 
     $dto = $this->brandfetch->searchBrand('brandfetch.com', 'helgesver.re')->dto();
 
-    expect($dto)->toBeInstanceOf(DataCollection::class)
+    expect($dto)->toBeInstanceOf(Collection::class)
         ->and($dto[0]->domain)->toBe('brandfetch.com')
         ->and($dto[0]->name)->toBe('Brandfetch');
 });
 
-it('SearchBrand returns a multiple results', closure: function () {
+it('SearchBrand returns a multiple results', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.multiple'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/multiple'),
     ]);
 
     $dto = $this->brandfetch->searchBrand('google', 'helgesver.re')->dto();
 
-    expect($dto)->toBeInstanceOf(DataCollection::class)
+    expect($dto)->toBeInstanceOf(Collection::class)
         ->and($dto[0]->domain)->toBe('google.com')
         ->and($dto[0]->name)->toBe('Google');
 
 });
 
-it('SearchBrand returns no results', closure: function () {
+it('SearchBrand returns no results', function () {
 
     Saloon::fake([
-        SearchBrand::class => MockResponse::fixture('searchBrand.empty'),
+        SearchBrand::class => MockResponse::fixture('searchBrand/empty'),
     ]);
 
-    /** @var DataCollection $dto */
+    /** @var Collection $dto */
     $dto = $this->brandfetch->searchBrand('invalid-domain-should-fail-horribly', 'helgesver.re')->dto();
 
-    expect($dto)->toBeInstanceOf(DataCollection::class)
+    expect($dto)->toBeInstanceOf(Collection::class)
         ->and($dto->count())->toBe(0);
 });
 
-it('RetrieveBrand returns complete response', closure: function () {
+it('RetrieveBrand returns complete response', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.full'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/full'),
     ]);
 
     /** @var Brand $dto */
@@ -86,10 +87,10 @@ it('RetrieveBrand returns complete response', closure: function () {
     Saloon::assertSent(RetrieveBrand::class);
 });
 
-it('RetrieveBrand returns response for autostrada.no', closure: function () {
+it('RetrieveBrand returns response for autostrada.no', function () {
 
     Saloon::fake([
-        RetrieveBrand::class => MockResponse::fixture('retrieveBrand.brand-autostrada'),
+        RetrieveBrand::class => MockResponse::fixture('retrieveBrand/brand-autostrada'),
     ]);
 
     $dto = $this->brandfetch->retrieveBrand('autostrada.no')->dto();

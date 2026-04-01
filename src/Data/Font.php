@@ -11,6 +11,5 @@ class Font extends Data
         public ?string $type,
         public ?string $origin,
         public ?string $originId,
-    ) {
-    }
+    ) {}
 }

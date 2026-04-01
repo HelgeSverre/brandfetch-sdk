@@ -18,9 +18,7 @@ class SearchBrand extends Request
     public function __construct(
         protected string $brandName,
         protected string $referer
-    ) {
-
-    }
+    ) {}
 
     public function resolveEndpoint(): string
     {
